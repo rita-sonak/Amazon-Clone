@@ -9,19 +9,20 @@
 </head>
 <body>
     <header>
-        <div class="h-14 bg-[#0f1111] text-white flex items-center justify-evenly">
+        <!--<div class="h-14 bg-[#0f1111] text-white flex items-center justify-evenly">-->
+        <div class=" bg-[#0f1111] text-white grid grid-cols-2 items-center sm:grid-cols-3"> 
             <div class="h-14 w-24 border-solid border-transparent hover:border-2 hover:border-solid hover:border-white">
                 <div class=
-                "h-14 w-full bg-cover bg-[url('/build/images/amazon_logo.png')]"></div>
+                "h-full w-full bg-cover bg-[url('/build/images/amazon_logo.png')]"></div>
             </div>
-            <div class="border-solid border-transparent hover:border-2 hover:border-solid hover:border-white">
+            <!-- <div class="border-solid border-transparent hover:border-2 hover:border-solid hover:border-white">
                 <p class="text-[#cccccc] text-sm ml-4">Deliver to</p>
                 <div class="flex items-center">
                     <i class="fa-solid fa-location-dot"></i>
                     <p class="text-base ml-1">India</p>
                 </div>
-            </div>
-            <div class="flex justify-evenly bg-pink-100 w-[620px] h-10 rounded-[4px] hover:border-solid hover:border-2 hover:border-orange-500">
+            </div> -->
+            <div class="flex justify-evenly bg-pink-100 w-full h-10 rounded-[4px] hover:border-solid hover:border-2 hover:border-orange-500 row-start-2 row-end-2 sm:row-start-1 sm:row-end-1 sm:col-start-2 sm:col-end-2">
                 <select class="bg-[#f3f3f3] w-12 text-center rounded-tl-[4px] rounded-bl-[4px] border-none text-[#0f1111]">
                     <option>All</option>
                 </select>
@@ -30,25 +31,29 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
-            <div class="border-solid border-transparent hover:border-2 hover:border-solid hover:border-white">
-                <p><span class="text-xs">Hello, sign in</span></p>
-                <p class="text-sm font-bold">Account & Lists</p>
-            </div>
-            <div class="nav-return border-solid border-transparent hover:border-2 hover:border-solid hover:border-white">
-                <p><span class="text-xs">Return</span></p>
-                <p class="text-sm font-bold">& Orders</p>
-            </div>
-            <div class="text-sm font-bold border-solid border-transparent hover:border-2 hover:border-solid hover:border-white" >
-                <i class="fa-solid fa-cart-shopping text-3xl"></i>
-                Cart
+            <div class="flex flex-row justify-end gap-10 items-center mr-6">
+                    <div class="text-sm font-bold border-solid border-transparent hover:border-2 hover:border-solid hover:border-white">
+                        <!-- <p><span class="text-xs">Hello, sign in</span></p>
+                        <p class="text-sm font-bold">Account & Lists</p> -->
+                        <i class="fa-regular fa-user text-2xl"></i>
+                        <p>You</p>
+                    </div>
+                    <!-- <div class="nav-return border-solid border-transparent hover:border-2 hover:border-solid hover:border-white">
+                        <p><span class="text-xs">Return</span></p>
+                        <p class="text-sm font-bold">& Orders</p>
+                    </div> -->
+                    <div class="text-sm font-bold border-solid border-transparent hover:border-2 hover:border-solid hover:border-white" >
+                        <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                        <p>Cart</p>
+                    </div>
+                    <div class="flex flex-col items-center whitespace-nowrap text-sm font-bold mt-1">
+                        <i class="fa-solid fa-bars text-lg"></i>
+                        <p>Menu</p>
+                    </div>
             </div>
         </div>
-         <div class="flex items-center justify-evenly h-10 bg-[#222f3d] text-white">
-            <div class="panel-all">
-                <i class="fa-solid fa-bars"></i>
-                All
-            </div>
-            <div class="w-8/12 text-xs">
+        <div class="flex flex-col gap-2 items-start justify-evenly h-auto bg-[#222f3d] text-white sm:flex-row sm:items-center sm:h-10">
+            <div class="flex flex-col gap-2 items-start w-2/3 sm:w-5/6 text-xs sm:flex-row sm:items-center sm:h-10">
                 <p class="inline ml-4">Today's Deal</p>
                 <p class="inline ml-4">Customer Service</p>
                 <p class="inline ml-4">Registry</p>
@@ -60,75 +65,76 @@
             </div>
          </div>
     </header>
-    <div class="bg-white text-black h-10 flex items-center justify-center text-sm ">
+    <div class="bg-white  text-black h-auto flex items-center justify-center text-xs sm:text-sm sm:h-10">
         You are on amazon.com. You can also shop on A mazon India for millions of products with fast local delivery. <a href=""> Click here to go to amazon.in</a>
     </div>
     <div class="h-[300px] bg-cover bg-[url('/build/images/hero_image.jpg')] flex justify-center items-end">
     </div>
-
-    <div class="flex justify-evenly bg-[#e2e7e6] flex-wrap">
-        <div class="h-[400px] w-[23%] bg-white pt-5 pb-4 mt-4"> 
-            <div class="ml-4 mr-4">
-                <h2>Clothes</h2>
-                <div class="h-[300px] bg-cover mt-4 mb-4 bg-[url('/build/images/box1_image.jpg')]"></div>
-                <p class="text-[#007185]">See more</p>
-            </div> 
+    <div class="grid grid-cols-1 gap-x-6 gap-y-2 mt-4 bg-[#e2e7e6] sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-4">
+        <div class="h-[350px]  bg-white pt-5 pb-4 mt-4 ">  
+                <div class=" ml-4 mr-4">
+                    <h2>Clothes</h2>
+                    <div class="h-[250px] bg-cover mt-4 mb-4 bg-[url('/build/images/box1_image.jpg')]"></div>
+                    <p class="text-[#007185]"><a href="product-categorywise.html">See more</a></p>
+                </div>     
+           
         </div>
-        <div class="h-[400px] w-[23%] bg-white pt-5 pb-4 mt-4"> 
-            <div class="ml-4 mr-4">
-                <h2>Health & Personal Care</h2> 
-                <div class="h-[300px] bg-cover mt-4 mb-4 bg-[url('/build/images/box2_image.jpg')]"></div>
-                <p class="text-[#007185]">See more</p>
-            </div> 
-        </div>
-        <div class="h-[400px] w-[23%] bg-white pt-5 pb-4 mt-4"> 
-            <div class="ml-4 mr-4">
+        <div class="h-[350px]  bg-white pt-5 pb-4 mt-4 ">  
+            <div class=" ml-4 mr-4">
+                <h2>Health & Personal Care</h2>
+                <div class="h-[250px] bg-cover mt-4 mb-4 bg-[url('/build/images/box2_image.jpg')]"></div>
+                <p class="text-[#007185]"><a href="product-categorywise.html">See more</a></p>
+            </div>     
+       </div>
+       <div class="h-[350px]  bg-white pt-5 pb-4 mt-4 ">  
+            <div class=" ml-4 mr-4">
                 <h2>Furniture</h2>
-                <div class="h-[300px] bg-cover mt-4 mb-4 bg-[url('/build/images/box3_image.jpg')]"></div>
-                <p class="text-[#007185]">See more</p>
-            </div> 
+                <div class="h-[250px] bg-cover mt-4 mb-4 bg-[url('/build/images/box3_image.jpg')]"></div>
+                <p class="text-[#007185]"><a href="product-categorywise.html">See more</a></p>
+            </div>     
         </div>
-        <div class="h-[400px] w-[23%] bg-white pt-5 pb-4 mt-4"> 
-            <div class="ml-4 mr-4">
+        <div class="h-[350px]  bg-white pt-5 pb-4 mt-4 ">  
+            <div class=" ml-4 mr-4">
                 <h2>Electronics</h2>
-                <div class="h-[300px] bg-cover mt-4 mb-4 bg-[url('/build/images/box4_image.jpg')]"></div>
-                <p class="text-[#007185]">See more</p>
-            </div> 
+                <div class="h-[250px] bg-cover mt-4 mb-4 bg-[url('/build/images/box4_image.jpg')]"></div>
+                <p class="text-[#007185]"><a href="product-categorywise.html">See more</a></p>
+            </div>     
         </div>
-        <div class="h-[400px] w-[23%] bg-white pt-5 pb-4 mt-4"> 
-            <div class="ml-4 mr-4">
+        <div class="h-[350px]  bg-white pt-5 pb-4 mt-4 ">  
+            <div class=" ml-4 mr-4">
                 <h2>Beauty Picks</h2>
-                <div class="h-[300px]  bg-cover mt-4 mb-4 bg-[url('/build/images/box5_image.jpg')] "></div>
-                <p class="text-[#007185]">See more</p>
-            </div> 
+                <div class="h-[250px] bg-cover mt-4 mb-4 bg-[url('/build/images/box5_image.jpg')]"></div>
+                <p class="text-[#007185]"><a href="product-categorywise.html">See more</a></p>
+            </div>     
         </div>
-        <div class="h-[400px] w-[23%] bg-white pt-5 pb-4 mt-4">  
-            <div class="ml-4 mr-4">
+        <div class="h-[350px]  bg-white pt-5 pb-4 mt-4 ">  
+            <div class=" ml-4 mr-4">
                 <h2>Pet Care</h2>
-                <div class="h-[300px] bg-cover mt-4 mb-4 bg-[url('/build/images/box6_image.jpg')]"></div>
-                <p class="text-[#007185]">See more</p>
-            </div> 
+                <div class="h-[250px] bg-cover mt-4 mb-4 bg-[url('/build/images/box6_image.jpg')]"></div>
+                <p class="text-[#007185]"><a href="product-categorywise.html">See more</a></p>
+            </div>     
         </div>
-        <div class="h-[400px] w-[23%] bg-white pt-5 pb-4 mt-4"> 
-            <div class="ml-4 mr-4">
+        <div class="h-[350px]  bg-white pt-5 pb-4 mt-4 ">  
+            <div class=" ml-4 mr-4">
                 <h2>New Arrival in Toys</h2>
-                <div class="h-[300px] bg-cover mt-4 mb-4 bg-[url('/build/images/box7_image.jpg')]"></div>
-                <p class="text-[#007185]">See more</p>
-            </div> 
+                <div class="h-[250px] bg-cover mt-4 mb-4 bg-[url('/build/images/box7_image.jpg')]"></div>
+                <p class="text-[#007185]"><a href="product-categorywise.html">See more</a></p>
+            </div>     
         </div>
-        <div class="h-[400px] w-[23%] bg-white pt-5 pb-4 mt-4"> 
-            <div class="ml-4 mr-4">
+        <div class="h-[350px]  bg-white pt-5 pb-4 mt-4 ">  
+            <div class=" ml-4 mr-4">
                 <h2>Discover Fashion Trends</h2>
-                <div class="h-[300px] bg-cover mt-4 mb-4 bg-[url('/build/images/box8_image.jpg')]"></div>
-                <p class="text-[#007185]">See more</p>
-            </div> 
+                <div class="h-[250px] bg-cover mt-4 mb-4 bg-[url('/build/images/box8_image.jpg')]"></div>
+                <p class="text-[#007185]"><a href="product-categorywise.html">See more</a></p>
+            </div>     
         </div>
+        
     </div>
     <footer class="mt-4">
         <div class="bg-[#37475a] text-white h-12 flex justify-center items-center text-sm">
             Back to Top
         </div>
-        <div class="bg-[#222f3d] text-white h-[300px] flex justify-evenly"> 
+        <div class="bg-[#222f3d] text-white h-auto flex justify-evenly gap-2 sm:gap-0 "> 
             <ul class="mt-5">
                 <p>Get to Know Us</p>
                 <a class="block text-sm mt-2 text-[#dddddd]">Careers</a>
